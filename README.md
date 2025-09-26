@@ -9,11 +9,19 @@ It lets you:
 - Test everything via Swagger UI at `/docs`
 
 ---
+## Quickstart
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/AdaneNT/mm-ai-clipping.git
 cd mm-ai-clipping
+```
+###  2. Build Docker image
+Portable CPU-only image (runs on Intel & Apple Silicon):
+```
+docker buildx build --platform linux/amd64 -t r2-tuning:cpu .
+```
+
 ## License Notice
 
 This wrapper is **not the original R2-Tuning code**.  
