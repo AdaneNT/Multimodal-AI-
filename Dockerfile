@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /app
 
-# install deps (PyTorch CPU wheels first)
+# install deps 
 COPY requirements.txt /app/requirements.txt
 RUN python -m pip install --no-cache-dir --upgrade pip && \
     python -m pip install --no-cache-dir \
@@ -17,15 +17,13 @@ RUN python -m pip install --no-cache-dir --upgrade pip && \
 # copy project
 COPY . /app
 
-# make repo root importable so config _base_ includes resolve
 ENV PYTHONPATH=/app
 ENV PORT=8000
 
 EXPOSE 8000
 
-# healthcheck (optional)
+# optional
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
   CMD python -c "import urllib.request as u; u.urlopen('http://127.0.0.1:' + __import__('os').environ.get('PORT','8000') + '/docs')" || exit 1
 
-# start API (change to inference_api2:app if that's your file)
 CMD ["uvicorn", "inference_api:app", "--host", "0.0.0.0", "--port", "8000", "--log-level", "info"]
