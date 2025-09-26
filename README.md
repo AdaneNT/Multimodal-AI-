@@ -14,7 +14,7 @@ It lets you:
 ## ⚠️ License Notice
 
 This wrapper is **not the original R2-Tuning code**.  
-The core model comes from [R2-Tuning (Ye Liu et al.)](https://github.com/AdaneNT/R2-Tuning), which is licensed under the BSD 3-Clause License (see [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)).
+The core model comes from [R2-Tuning (Ye Liu et al.)](https://github.com/yeliudev/R2-Tuning), which is licensed under the BSD 3-Clause License (see [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)).
 
 All credit for the model architecture and training belongs to the original authors.  
 This repo only provides a **Dockerized inference API** for easier testing.
