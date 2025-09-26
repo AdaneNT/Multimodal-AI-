@@ -1,6 +1,6 @@
 # R2-Tuning FastAPI Wrapper 🚀
 
-This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning/blob/main/LICENSE).
+This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning).
 
 It lets you:
 - Upload a video
