@@ -1,4 +1,4 @@
-# R2-Tuning FastAPI Wrapper 🚀
+# R2-Tuning FastAPI Wrapper 
 
 This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning).
 
