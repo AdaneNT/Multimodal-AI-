@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+torchvision
+ftfy
+regex
+tqdm
+tabulate
+decord
+nncore
+git+https://github.com/openai/CLIP.git
+python-multipart
