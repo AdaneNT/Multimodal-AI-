@@ -32,6 +32,7 @@ Model checkpoint is already included in ./checkpoints:
 Instead of manual docker run:
 
 ```docker compose up --build```
+
 Then open:
 
 ```http://localhost:8000/docs```
