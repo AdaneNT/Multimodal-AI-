@@ -1,14 +1,12 @@
 # R2-Tuning FastAPI Wrapper 
 
-This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning).
+This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning). It does **not** reimplement R2-Tuning. Instead, it provides:
+- A **FastAPI wrapper** that turns the original command-line inference script into an HTTP service with Swagger UI.
+- A **Dockerized environment** for CPU-only execution (portable across Intel and Apple Silicon).
+- Ready-to-use endpoints for uploading videos + text queries and retrieving highlights.
 
-It lets you:
-- Upload a video
-- Provide a text query
-- Auto-generate clips via ffmpeg
-- Test everything via Swagger UI at `/docs`
+The underlying model code and weights come from [R2-Tuning](https://github.com/yeliudev/R2-Tuning) (Ye Liu, BSD-3-Clause).  
 
----
 ## Quickstart
 
 ### 1. Clone the repository
@@ -40,14 +38,12 @@ Then open:
 
 ```http://localhost:8000/docs```
 
-## License Notice
+## License 
 
-This wrapper is **not the original R2-Tuning code**.  
-The core model comes from [R2-Tuning (Ye Liu et al.)](https://github.com/yeliudev/R2-Tuning), which is licensed under the BSD 3-Clause License (see [THIRD_PARTY_LICENSES.md](./THIRD_PARTY_LICENSES.md)).
+- Original R2-Tuning (Ye Liu, BSD-3-Clause).  
+- This wrapper: MIT License.  
+See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for details.
 
-All credit for the model architecture and training belongs to the original authors.  
-This repo only provides a **Dockerized inference API** for easier testing at own premises.
 
----
 
 
