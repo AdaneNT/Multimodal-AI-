@@ -5,7 +5,6 @@ This repository provides a **FastAPI + Swagger UI interface** for running infere
 It lets you:
 - Upload a video
 - Provide a text query
-- Get predicted highlight segments
 - Auto-generate clips via ffmpeg
 - Test everything via Swagger UI at `/docs`
 
