@@ -1,4 +1,4 @@
-# Copyright (c) Ye Liu. Licensed under the BSD 3-Clause License.#
+# Copyright (c) Ye Liu. Licensed under the BSD 3-Clause License.
 # This file is a modified version of the original R2-Tuning inference script.
 # Changes: added FastAPI + Swagger UI wrapper and Dockerized deployment support.
 
