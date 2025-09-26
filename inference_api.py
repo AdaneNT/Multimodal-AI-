@@ -85,13 +85,11 @@ def _ffmpeg_cut(input_path: str, start: float, end: float, out_path: str) -> str
     """
     start_s, end_s = f"{start:.2f}", f"{end:.2f}"
 
-    # 1) Fast path (no re-encode)
     cmd_copy = ["ffmpeg", "-y", "-ss", start_s, "-to", end_s, "-i", input_path, "-c", "copy", out_path]
     r = subprocess.run(cmd_copy, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     if r.returncode == 0 and Path(out_path).exists():
         return out_path
 
-    # 2) Fallback (re-encode) — robust
     out_path_re = str(Path(out_path).with_suffix(".reencode.mp4"))
     cmd_re = [
         "ffmpeg", "-y",
@@ -188,7 +186,7 @@ async def predict(
     query: str = Form(..., description="Text query"),
     topk: int = Form(5, ge=1, le=50, description="Number of segments to return"),
 ):
-    """Either upload a file or provide an existing server path."""
+    """ upload a file or provide a  path"""
     if video is None and not video_path:
         raise HTTPException(status_code=400, detail="Provide either 'video' upload or 'video_path'.")
  
@@ -251,7 +249,7 @@ async def predict(
         topk=topk,
         segments=[Segment(start=s, end=e, score=sc) for (s, e, sc) in results],
         saved_clip=saved_clip_path,
-    ###
+    
     
     )
 
