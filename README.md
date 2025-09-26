@@ -1,10 +1,9 @@
 # R2-Tuning FastAPI Wrapper 
 
-This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning) (Ye Liu, BSD-3-Clause). It does not reimplement R2-Tuning. Instead, it provides:
+This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning). It provides:
 - A FastAPI wrapper that turns the original command-line inference script into an HTTP service with Swagger UI.
 - A Dockerized environment for CPU-only execution (portable across Intel and Apple Silicon).
 - Ready-to-use endpoints for uploading videos + text queries and retrieving highlight clips.
-The underlying model code and weights come from [R2-Tuning](https://github.com/yeliudev/R2-Tuning) (Ye Liu, BSD-3-Clause).  
 
 ## Quickstart
 
