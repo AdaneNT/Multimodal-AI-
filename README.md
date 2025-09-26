@@ -50,13 +50,4 @@ This repo only provides a **Dockerized inference API** for easier testing at own
 
 ---
 
-## 🚀 Quickstart
 
-### 1. Clone repositories
-```bash
-# Clone original R2-Tuning
-git clone https://github.com/AdaneNT/R2-Tuning.git
-
-# Clone this wrapper
-git clone https://github.com/<your-username>/r2-tuning-fastapi-wrapper.git
-cd r2-tuning-fastapi-wrapper
