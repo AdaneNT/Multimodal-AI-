@@ -9,7 +9,12 @@ It lets you:
 - Test everything via Swagger UI at `/docs`
 
 ---
+## 📦 Setup
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/mm-ai-clipping.git
+cd mm-ai-clipping
 ## License Notice
 
 This wrapper is **not the original R2-Tuning code**.  
