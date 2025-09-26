@@ -9,11 +9,10 @@ It lets you:
 - Test everything via Swagger UI at `/docs`
 
 ---
-## 📦 Setup
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/mm-ai-clipping.git
+git clone https://github.com/AdaneNT/mm-ai-clipping.git
 cd mm-ai-clipping
 ## License Notice
 
