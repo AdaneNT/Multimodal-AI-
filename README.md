@@ -40,7 +40,7 @@ Then open:
 
 - Original R2-Tuning (Ye Liu, BSD-3-Clause).  
 - This wrapper: MIT License.  
-See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for details.
+See [THIRD_PARTY_LICENSES.md]([THIRD_PARTY_LICENSES.md](https://github.com/yeliudev/R2-Tuning/blob/main/LICENSE)) for details.
 
 
 
