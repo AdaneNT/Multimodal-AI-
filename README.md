@@ -32,6 +32,14 @@ Model checkpoint is already included in ./checkpoints:
 ### 4. Open Swagger UI
 ```http://localhost:8000/docs```
 
+### Optional
+Instead of manual docker run:
+
+```docker compose up --build```
+Then open:
+
+```http://localhost:8000/docs```
+
 ## License Notice
 
 This wrapper is **not the original R2-Tuning code**.  
