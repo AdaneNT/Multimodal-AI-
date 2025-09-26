@@ -21,6 +21,16 @@ Portable CPU-only image (runs on Intel & Apple Silicon):
 ```
 docker buildx build --platform linux/amd64 -t r2-tuning:cpu .
 ```
+### 3. Run container
+Model checkpoint is already included in ./checkpoints:
+```docker run --rm -p 8000:8000 \
+  -e PYTHONPATH=/app \
+  -v "$(pwd)/checkpoints:/app/checkpoints:ro" \
+  -v "$(pwd)/data:/app/data" \
+  r2-tuning:cpu
+```
+### 4. Open Swagger UI
+```http://localhost:8000/docs```
 
 ## License Notice
 
