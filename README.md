@@ -30,7 +30,7 @@ Model checkpoint is already included in ./checkpoints:
 ### 4. Open Swagger UI
 ```http://localhost:8000/docs```
 
-### Optional
+### OR
 Instead of manual docker run:
 
 ```docker compose up --build```
