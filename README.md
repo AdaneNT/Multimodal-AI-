@@ -15,7 +15,8 @@ cd mm-ai-clipping
 ###  2. Build Docker image
 Portable CPU-only image (runs on Intel & Apple Silicon):
 ```
-docker buildx build --platform linux/amd64 -t r2-tuning:cpu .
+docker buildx build --platform linux/amd64 -t mm-ai-clipping:cpu .
+
 ```
 ### 3. Run container
 Model checkpoint is already included in ./checkpoints:
@@ -23,7 +24,8 @@ Model checkpoint is already included in ./checkpoints:
   -e PYTHONPATH=/app \
   -v "$(pwd)/checkpoints:/app/checkpoints:ro" \
   -v "$(pwd)/data:/app/data" \
-  r2-tuning:cpu
+  mm-ai-clipping:cpu
+
 ```
 ### 4. Open Swagger UI
 ```http://localhost:8000/docs```
