@@ -1,4 +1,4 @@
-# Grounding FastAPI Wrapper 
+# Video Grounding FastAPI Wrapper 
 
 This repository provides a **FastAPI + Swagger UI interface** for running inference with [R2-Tuning](https://github.com/yeliudev/R2-Tuning). It provides:
 - FastAPI wrapper that turns the command-line inference script into an HTTP service with Swagger UI.
